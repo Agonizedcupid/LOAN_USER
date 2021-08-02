@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "453560259619",
+    "project_id": "loanproject-d1ce9",
+    "storage_bucket": "loanproject-d1ce9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453560259619:android:e584e65984b143e6270d96",
+        "android_client_info": {
+          "package_name": "com.aariyan.loan_user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453560259619-i0kgaupi82rir4d6r10852k88a44ig8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3DBBwtUw1DivNpMPyLRQJcSqXhiRfCIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453560259619-i0kgaupi82rir4d6r10852k88a44ig8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

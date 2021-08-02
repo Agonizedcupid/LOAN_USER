@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/profile"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            />
+
+        <TextView
+            android:id="@+id/userNameInMainPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, User Name"
+            android:layout_toEndOf="@id/profileIcon"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="7dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+
+            />
+
+        <ImageView
+            android:id="@+id/notificationIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/notification_red"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/profileIcon"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/featuresText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Features"
+                android:gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:background="@drawable/features_background"
+                android:layout_centerHorizontal="true"
+                android:paddingStart="25dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="50dp"
+                android:layout_marginTop="25dp"
+                />
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="15dp"
+                app:cardCornerRadius="7dp"
+                android:layout_below="@id/featuresText"
+                android:layout_marginTop="-35dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="7dp"
+                            android:layout_weight="1"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:id="@+id/loanLinearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boarders"
+                                android:orientation="vertical"
+                                android:layout_margin="7dp"
+                                android:padding="20dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/loan_icon"
+                                    android:layout_gravity="center"
+                                    />
+
+
+                                <HorizontalScrollView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_gravity="center"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Apply For Loan"
+                                        android:textSize="14sp"
+                                        android:layout_gravity="center"
+                                        android:textColor="@android:color/holo_red_dark"
+                                        />
+
+                                </HorizontalScrollView>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="7dp"
+                            android:layout_weight="1"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:id="@+id/userDetailsLinearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boarders"
+                                android:orientation="vertical"
+                                android:layout_margin="7dp"
+                                android:padding="20dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/user_details"
+                                    android:layout_gravity="center"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="User Details"
+                                    android:layout_marginTop="15dp"
+                                    android:textSize="14sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="7dp"
+                            android:layout_weight="1"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:id="@+id/transactionLinearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boarders"
+                                android:orientation="vertical"
+                                android:layout_margin="7dp"
+                                android:padding="20dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/transaction"
+                                    android:layout_gravity="center"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Transactions"
+                                    android:layout_marginTop="15dp"
+                                    android:textSize="14sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="7dp"
+                            app:cardElevation="7dp"
+                            android:layout_weight="1"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:id="@+id/calculatorLinearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/boarders"
+                                android:orientation="vertical"
+                                android:layout_margin="7dp"
+                                android:padding="20dp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/tax_calculator"
+                                    android:layout_gravity="center"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tax Calculator"
+                                    android:layout_marginTop="15dp"
+                                    android:textSize="14sp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

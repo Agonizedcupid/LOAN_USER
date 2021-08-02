@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home_white"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/favorite"
+        android:enabled="true"
+        android:icon="@drawable/favorite_white"
+        android:title="Favorite"
+        />
+
+    <item
+        android:id="@+id/share"
+        android:enabled="true"
+        android:icon="@drawable/share_white"
+        android:title="Share"
+        />
+
+    <item
+        android:id="@+id/help"
+        android:enabled="true"
+        android:icon="@drawable/help_white"
+        android:title="Help"
+        />
+
+</menu>
